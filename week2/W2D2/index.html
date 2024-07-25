@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Katie Truchon, the coolest" >
+    <meta name="description" content="W2D2 Bio Assignment Demo" >
+    
+    <title>W2 | Bio</title>
+
+    <!--in-document styling; loads in head so styles apply as the content loads-->
+    <!--handles many selections of element styles as opposed to one at a time-->
+    <style>
+    /*in here we write CSS*/
+
+    /*SELECTION in CSS & JS: select specific element(s) on a page
+
+        *by ELEMENT type    ex: body, div, p
+        *by ID attribute    ex: #wrapper, #nav, #footer, #tittle
+        *by CLASS attribute ex: coming in week 3 :]
+
+    */
+
+    div {
+        border: 1px solid black;
+        padding: 10px; /*adds space between content & border*/
+        margin: 10px; /*adds space between an element's border*/
+
+        background-color: azure;
+    }
+
+    #wrapper {
+        background-color: black;
+        
+    }
+
+    #navigation, #footer {
+        background-color: green;
+    }
+
+
+    </style>
+</head>
+<body style="background-color: grey;">
+    <!---all page content goes in the body-->
+
+    <!--WRAPPER:  the wrapper literallly "wraps" around all the content on the page-->
+    <div id="wrapper">
+
+        <h1 style="color: azure;">Katharine M. Truchon - <i>Katie or KT :]</i></h1>
+
+        <!--NAVIGATION-->
+        <div id="navigation">
+            <!--ID names can only be used 1x per page!-->
+
+            <!--linking to OUTSIDE pages (not a part of the website) you need the FULL path protocol through file extension (if not index.html)-->
+            <a href="https://www.meca.edu" target="_blank">Visit MECA</a><!--target opens new tag-->
+
+            <!--linking to INTERNAL pages (part of site) you just use the RELATIVE path-->
+            <a href="page2.html#footer">Page 2</a>
+            <br>
+            <br>
+
+            <!--IN-PAGE links: linking to sections within the actual page-->
+            <a href="#bio">BIO</a>
+            <a href="#schools">SCHOOLS</a>
+            <a href="#hobbies">HOBBIES</a>
+            <br>
+            <br>
+            <a href="#footer">Bottom of Page</a>
+
+        </div><!--/ nav-->
+
+        <!--BIO SELECTION-->
+        <div id="bio">
+
+        </div><!--/ bio-->
+
+        <!--SCHOOLS SECTION-->
+        <div id schools>
+
+        </div><!--/ schools-->
+
+        <!--HOBBIES SECTION-->
+        <div id="hobbies">
+
+        </div><!--/ hobbies-->
+
+        <!--FOOTER SECTION-->
+        <div id="footer">
+
+        </div><!--/ footer-->
+
+    </div>
+</body>
+</html>
