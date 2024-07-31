@@ -9,23 +9,20 @@
     <title>Jose's Schools</title>
 
     <style>
-        #neit_logo{
+        .nav-bar {
+        margin-right: 10px;
+    }
+        .school-logo{
             width: 100px;
             border-radius: 50px;
             float: left;
         }
-        #wsu_logo{
-            width: 100px;
-            border-radius: 50px;
-            float: left;
+        
+        .list {
+            margin-bottom: 100px;
         }
-        #bsu_logo{
-            width: 100px;
-            border-radius: 50px;
-            float: left;
-        }
-
     </style>
+
 </head>
 <body style="background-color:rgb(111, 184, 184);">
     <div id="wrapper">
@@ -36,9 +33,9 @@
 
         <!--NAVIGATION-->
         <div id="nav">
-            <a href="index.html">HOME</a>
-            <a href="schools.html">SCHOOLS</a>
-            <a href="hobbies.html">HOBBIES</a>
+            <a class="nav-bar" href="index.html">HOME</a>
+            <a class="nav-bar" href="schools.html">SCHOOLS</a>
+            <a class="nav-bar" href="hobbies.html">HOBBIES</a>
         </div><!--/ #nav-->
         <hr>
         <br>
@@ -48,16 +45,20 @@
             <h2><i>Jose's Education</i></h2>
 
             <ol>
-                <li><a href="https://www.neit.edu/" target="_blank"><img id="neit_logo" src="Images/NEIT_logo.jpeg" alt="NEIT Logo">New England Institute of Technology</a></li>
-                <br><br><br><br><br>
+                <li class="list">
+                    <a href="https://www.neit.edu/" target="_blank"><img class="school-logo" src="Images/NEIT_logo.jpeg" alt="NEIT Logo">New England Institute of Technology</a>
+                </li>
 
-                <li><a href="https://www.westfield.ma.edu/" target="_blank"><img id="wsu_logo" src="Images/WSU_logo.jpg" alt="WSU Logo">Westfield State University</a></li>
-                <br><br><br><br><br>
+                <li class="list">
+                    <a href="https://www.westfield.ma.edu/" target="_blank"><img class="school-logo" src="Images/WSU_logo.jpg" alt="WSU Logo">Westfield State University</a>
+                </li>
 
-                <li><a href="https://www.bridgew.edu/" target="_blank"><img id="bsu_logo" src="Images/BSU_logo.jpeg" alt="BSU Logo">Bridgewater State University</a></li>
+                <li class="list">
+                    <a href="https://www.bridgew.edu/" target="_blank"><img class="school-logo" src="Images/BSU_logo.jpeg" alt="BSU Logo">Bridgewater State University</a>
+                </li>
             </ol>
         </div><!--/ #main-content-->
-        <br><br><br><br><br>
+        <br>
         <hr>
 
         <!--Footer-->
