@@ -7,7 +7,7 @@
     <meta name="author" content="Jose Vargas Figueroa">
     <meta name="description" content="W3 Multipage Bio">
     
-    <title>Week 3 Multi-page Bio</title>
+    <title>Week 3 Multi-Page Bio</title>
 
     <style>
         img{
@@ -17,9 +17,19 @@
 
     em{color: red;}
     strong{color: blue;}
-    
+
     .nav-bar {
         margin-right: 10px;
+    }
+    #nav {
+        border: 3px solid rgb(58, 168, 247);
+    }
+
+    #footer {
+        border: 3px solid rgb(58, 168, 247);
+    }
+    .bg {
+        background-color: rgb(119, 189, 239);
     }
     </style>
     
@@ -35,10 +45,13 @@
         </div><!--/ #header-->
 
         <!--NAVIGATION-->
-        <div id="nav">
-            <a class="nav-bar" href="index.html">HOME</a>
-            <a class="nav-bar" href="schools.html">SCHOOLS</a>
-            <a class="nav-bar" href="hobbies.html">HOBBIES</a>
+        <div id="nav" class="bg">
+            <div id="buttons">
+                <a class="nav-bar" href="index.html">HOME</a>
+                <a class="nav-bar" href="schools.html">SCHOOLS</a>
+                <a class="nav-bar" href="hobbies.html">HOBBIES</a>
+            </div><!--/ #buttons-->
+            
 
         </div><!--/ #nav-->
         <hr>
@@ -58,7 +71,8 @@
         <hr>
 
         <!--Footer-->
-        <div id="footer">
+        <div id="footer"
+        class="bg">
             <a href="#wrapper">Back to Top</a>
             <br>
             <p>&copy; 2024 | J Vargas Figueroa | SE111 [202440]</p>
