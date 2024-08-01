@@ -10,6 +10,15 @@
     <title>Jose's Schools</title>
 
     <style>
+        body {
+            padding: 100px;
+        }
+        
+        div {
+            border: solid darkslategrey;
+            padding: 10px;
+        }
+        
         .nav-bar {
         margin-right: 10px;
     }
@@ -23,13 +32,6 @@
             margin-bottom: 100px;
         }
 
-        #nav {
-        border: 3px solid rgb(58, 168, 247);
-    }
-
-    #footer {
-        border: 3px solid rgb(58, 168, 247);
-    }
     .bg {
         background-color: rgb(119, 189, 239);
     }
@@ -39,15 +41,17 @@
 <body style="background-color:rgb(111, 184, 184);">
     <div id="wrapper">
         <!--HEADER-->
-        <div id="header">
+        <div id="header" class="bg">
             <h1 id="schools">Life of Jose</h1>
         </div><!--/ #header-->
 
         <!--NAVIGATION-->
-        <div id="nav" class="bg">
-            <a class="nav-bar" href="index.html">HOME</a>
-            <a class="nav-bar" href="schools.html">SCHOOLS</a>
-            <a class="nav-bar" href="hobbies.html">HOBBIES</a>
+        <div id="nav">
+            <div id="buttons">
+                <a class="nav-bar" href="index.html">HOME</a>
+                <a class="nav-bar" href="schools.html">SCHOOLS</a>
+                <a class="nav-bar" href="hobbies.html">HOBBIES</a>
+            </div><!--/ #buttons-->
         </div><!--/ #nav-->
         <hr>
         <br>
