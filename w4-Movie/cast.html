@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="author" content="Jose Vargas Figueroa" />
+    <meta name="description" content="W4 | Movie Site" />
+
+    <title>Shameless | Cast</title>
+
+    <!--in-document styling-->
+    <style>
+      #header {
+        background-image: url(images/shamlessSmokeScreen.jpg);
+        background-size: cover; /*ensures image covers entire div*/
+        background-position: center;
+        background-repeat: no-repeat; /*prevents image from repeating*/
+        color: white;
+        position: relative; /*to position text within the div*/
+      }
+      #header h1 {
+        font-size: 35px;
+      }
+      body {
+        background: linear-gradient(to left, #ff7e5f, #feb47b);
+        height: 100vh;
+        margin: 0;
+      }
+      div {
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+      }
+
+      .button {
+        margin-right: 10px;
+      }
+      #nav {
+        text-align: center;
+      }
+      .actorImage {
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+      }
+
+      .button {
+        display: inline-block; /*makes the link behave like a block element while staying  in line with other elements*/
+        padding: 10px 20px; /* Adjust padding for button size */
+        margin: 5px; /* Space between buttons */
+        font-size: 16px;
+        color: #fff; /* Text color */
+        background-color: blue; /* Button background color */
+        border: none;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s ease; /* Smooth transition for hover */
+      }
+
+      /* Hover effect */
+      .button:hover {
+        background-color: teal; /* Darker shade on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <!--#CONTAINER-->
+    <div id="container">
+      <hr />
+
+      <!--#HEADER-->
+      <div id="header" style="border: none">
+        <h1>
+          <em>Shameless</em>
+        </h1>
+        <h4>How to live in the south side of Chicago</h4>
+        <div
+          class="clear"
+          style="clear: both; border: none; padding: 0; margin: 0"
+        ></div>
+      </div>
+      <!--/ #header-->
+      <hr />
+
+      <!--#NAV-->
+      <div id="nav" style="border: none">
+        <a href="index.html" class="button">ABOUT</a>
+        <a href="cast.html" class="button">CAST</a>
+        <a href="review.html" class="button">REVIEW</a>
+      </div>
+      <!--/ #nav-->
+      <hr />
+
+      <!--#CONTENT-->
+      <div id="content">
+        <h2>THE CAST of <em>Shameless</em></h2>
+        <h3><i><u>Click image for IMDB page!</u></i></h3>
+
+        <!--Reusable div for EACH character-->
+        <div class="character" style="border: none">
+          <h3>Emily Rossum</h3>
+          <a
+            href="https://www.imdb.com/name/nm0002536/?ref_=tt_cl_i_1"
+            target="_blank"
+            ><img
+              src="images/EmilyRossum.webp"
+              alt="Emily Rossum"
+              class="actorImage"
+          /></a>
+          <p>Fiona Gallagher</p>
+          <div
+            class="clear"
+            style="clear: both; border: none; padding: 0; margin: 0"
+          ></div>
+        </div>
+        <hr />
+
+        <div class="character" style="border: none">
+          <h3>William H. Macy</h3>
+          <a
+            href="https://www.imdb.com/name/nm0000513/?ref_=tt_cl_i_2"
+            target="_blank"
+            ><img
+              src="images/WilliamMacy.webp"
+              alt="William H. Macy"
+              class="actorImage"
+          /></a>
+          <p>Frank Gallagher</p>
+          <div
+            class="clear"
+            style="clear: both; border: none; padding: 0; margin: 0"
+          ></div>
+        </div>
+        <hr />
+
+        <div class="character" style="border: none">
+          <h3>Jeremy Allen White</h3>
+          <a
+            href="https://www.imdb.com/name/nm2087739/?ref_=tt_cl_i_4"
+            target="_blank"
+            ><img
+              src="images/JeremyAllen.webp"
+              alt="Jeremy Allen White"
+              class="actorImage"
+          /></a>
+          <p>Lip Gallagher</p>
+          <div
+            class="clear"
+            style="clear: both; border: none; padding: 0; margin: 0"
+          ></div>
+        </div>
+        <hr />
+
+        <div class="character" style="border: none">
+          <h3>Cameron Monaghan</h3>
+          <a
+            href="https://www.imdb.com/name/nm1185747/?ref_=tt_cl_i_8"
+            target="_blank"
+            ><img
+              src="images/CameronMonaghan.webp"
+              alt="Cameron Monaghan"
+              class="actorImage"
+          /></a>
+          <p>Ian Gallagher</p>
+          <div
+            class="clear"
+            style="clear: both; border: none; padding: 0; margin: 0"
+          ></div>
+        </div>
+        <hr />
+
+        <div class="character" style="border: none">
+          <h3>Ethan Cutkosky</h3>
+          <a
+            href="https://www.imdb.com/name/nm3103119/?ref_=tt_cl_i_3"
+            target="_blank"
+            ><img
+              src="images/EthanCutkosky.webp"
+              alt="Ethan Cutkosky"
+              class="actorImage"
+          /></a>
+          <p>Carl Gallagher</p>
+          <div
+            class="clear"
+            style="clear: both; border: none; padding: 0; margin: 0"
+          ></div>
+        </div>
+      </div>
+      <!--/ #content-->
+      <hr />
+
+      <!--#FOOTER-->
+      <div id="footer">
+        <p><img src="images/ShamelessCastValidator.png" alt="Cast Validator"></p>
+        <a href="#header">Back to Top!</a>
+        <p>&copy; J Vargas Figueroa | SE111 | 202440</p>
+
+        <!--
+            VALIDATION SCREENSHOT IMAGE FOR *THIS* PAGE BELOW
+            <img src="" alt="">
+            -->
+      </div>
+      <!--/ #footer-->
+    </div>
+    <!--/ #container-->
+  </body>
+</html>
