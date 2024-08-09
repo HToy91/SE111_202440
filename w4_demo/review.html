@@ -11,6 +11,21 @@
 
     <!--in-document styling-->
     <style>
+      #header {
+        background-image: url(images/shamlessSmokeScreen.jpg);
+        background-size: cover; /*ensures image covers entire div*/
+        background-position: center;
+        color: white;
+        position: relative; /*to position text within the div*/
+      }
+      #header h1 {
+        font-size: 35px;
+      }
+      body {
+        background: linear-gradient(to left, #ff7e5f, #feb47b);
+        height: 100vh;
+        margin: 0;
+      }
       div {
         border: 1px solid black;
         padding: 10px;
@@ -43,9 +58,24 @@
         );
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       }
-      .headerImage {
-        float: inline-end;
-        width: 300px;
+
+      .button {
+        display: inline-block;
+        padding: 10px 20px; /* Adjust padding for button size */
+        margin: 5px; /* Space between buttons */
+        font-size: 16px;
+        color: #fff; /* Text color */
+        background-color: blue; /* Button background color */
+        border: none;
+        border-radius: 5px; /* Rounded corners */
+        text-align: center;
+        text-decoration: none; /* Remove underline */
+        transition: background-color 0.3s ease; /* Smooth transition for hover */
+      }
+
+      /* Hover effect */
+      .button:hover {
+        background-color: teal; /* Darker shade on hover */
       }
     </style>
   </head>
@@ -55,15 +85,9 @@
       <hr />
 
       <!--#HEADER-->
-      <div id="header">
+      <div id="header" style="border: none">
         <h1>
           <em>Shameless</em>
-          <img
-            src="images/shamlessSmokeScreen.jpg"
-            width="400"
-            alt="shamless cast rioting"
-            class="headerImage"
-          />
         </h1>
         <h4>How to live in the south side of Chicago</h4>
         <div
@@ -72,9 +96,10 @@
         ></div>
       </div>
       <!--/ #header-->
+      <hr />
 
       <!--#NAV-->
-      <div id="nav">
+      <div id="nav" style="border: none">
         <a href="index.html" class="button">ABOUT</a>
         <a href="cast.html" class="button">CAST</a>
         <a href="review.html" class="button">REVIEW</a>
