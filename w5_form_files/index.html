@@ -1,117 +1,196 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!--The type of font we are using-->
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <!--Tells the -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Jose Vargas Figueroa">
-    <meta name="description" content="Default HTML Page for SE 111">
-    
-    <link type="text/css" rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jose Vargas Figueroa" />
+    <meta name="description" content="Default HTML Page for SE 111" />
+
+    <link type="text/css" rel="stylesheet" href="style.css" />
 
     <title>Week 5 | Tables and Forms</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Birthday Party Registration Form</h1>
     <!--Build your Table and Form here-->
     <form action="confirm.html" method="Get"></form>
     <table>
-        <thead>
-            <tr>
-                <td><b>Labels</b></td>
-                <td><b>Form Fields</b></td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Parent/Guardian Name</td>
-                <td>
-                    <input type="text"
-                    required
-                    maxlength="20"
-                    name="gfirst"
-                    id="g-first"
-                    id="g-first"
-                    placeholder="First Name">
-                <br>
-                    <input type="text"
-                    required
-                    maxlength="20"
-                    name="gfirst"
-                    id="g-last"
-                    placeholder="Last Name">
-                </td>
-            </tr>
+      <thead>
+        <tr>
+          <td><b>Labels</b></td>
+          <td><b>Form Fields</b></td>
+        </tr>
+      </thead>
 
-            <tr>
-                <td>Child's First Name</td>
-                <td>
-                    <input type="text"
-                    required name="cfirst" placeholder="Child's First Name">
-                </td>
-            </tr>
+      <tbody>
+        <tr>
+          <td>Parent/Guardian Name</td>
+          <td>
+            <input
+              type="text"
+              required
+              maxlength="20"
+              name="gfirst"
+              id="g-first"
+              id="g-first"
+              placeholder="First Name"
+            />
+            <br />
+            <input
+              type="text"
+              required
+              maxlength="20"
+              name="gfirst"
+              id="g-last"
+              placeholder="Last Name"
+            />
+          </td>
+        </tr>
 
-            <tr>
-                <td>Child's Age</td>
-                <td>
-                    <input type="number"
-                    required
-                    name="age"
-                    value="3">
-                </td>
-            </tr>
+        <tr>
+          <td>Child's First Name</td>
+          <td>
+            <input
+              type="text"
+              required
+              name="cfirst"
+              placeholder="Child's First Name"
+            />
+          </td>
+        </tr>
 
-            <tr>
-                <td><h2>Date and Time</h2></td>
-                <td></td>
-            </tr>
+        <tr>
+          <td>Child's Age</td>
+          <td>
+            <input type="number" required name="age" value="3" />
+          </td>
+        </tr>
 
-            <tr>
-                <td>Date</td>
-                <td>
-                    <input type="date"
-                    required
-                    name="date">
-                </td>
-            </tr>
+        <tr>
+          <td><h2>Date and Time</h2></td>
+          <td></td>
+        </tr>
 
-            <tr>
-                <td>Start Time</td>
-                <td>
-                    <input type="time"
-                    required
-                    name="time">
-                </td>
-            </tr>
+        <tr>
+          <td>Date</td>
+          <td>
+            <input type="date" required name="date" />
+          </td>
+        </tr>
 
-            <tr>
-                <td>Number of Guests</td>
-                <td>
-                    <input type="number"
-                    name="guests"
-                    value="5">
-                </td>
-            </tr>
+        <tr>
+          <td>Start Time</td>
+          <td>
+            <input type="time" required name="time" />
+          </td>
+        </tr>
 
-            <tr>
-                <td><h2>Food</h2></td>
-                <td></td>
-            </tr>
+        <tr>
+          <td>Number of Guests</td>
+          <td>
+            <input type="number" name="guests" value="5" />
+          </td>
+        </tr>
 
-            <tr>
-                <td>Size</td>
-                <td>
-                    <input type="radio"
-                    name="size">
-                    <input type="radio"
-                    name="size">
-                    <input type="radio"
-                    name="size">
-                </td>
-            </tr>
-        </tbody>
+        <tr>
+          <td><h2>Food</h2></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Size</td>
+          <td>
+            <input type="radio" name="size" />sm
+            <input type="radio" name="size" />md
+            <input type="radio" name="size" />lg
+          </td>
+        </tr>
+
+        <tr>
+          <td>Drinks</td>
+          <td>
+            <input
+              type="checkbox"
+              required
+              name="drink1"
+              checked="true"
+              value="coke"
+            />coke
+            <br />
+            <input
+              type="checkbox"
+              required
+              name="drink2"
+              value="sprite"
+            />sprite
+            <br />
+            <input
+              type="checkbox"
+              required
+              name="drink3"
+              value="fruit punch"
+            />Fruit punch
+            <br />
+            <input
+              type="checkbox"
+              required
+              name="drink4"
+              value="lemonade"
+            />lemonade
+            <br />
+            <input
+              type="checkbox"
+              required
+              name="drink5"
+              value="iced tea"
+            />Iced Tea
+          </td>
+        </tr>
+
+        <tr>
+          <td>Cake</td>
+          <td>
+            <select name="cake" id="cake">
+              <option value="chocolate" selected>Chocolate</option>
+              <option value="vanilla">Vanilla</option>
+              <option value="own">I'll Bring my Own</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td><h2>Decorations</h2></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <td>Color Scheme</td>
+          <td>
+            <input type="color" name="colors" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>Additional Comments</td>
+          <td>
+            <textarea
+              name="comments"
+              id="comments"
+              placeholder="Please add any additional comments here"
+            >
+            </textarea>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Submit" />
+          </td>
+        </tr>
+      </tbody>
     </table>
-    
-</body>
+  </body>
 </html>
