@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>W6 | JS Calculator</title>
+
+    <meta name="author" content="Jose Vargas Figueroa" />
+    <meta name="description" content="W6 JS calculator" />
+  </head>
+
+  <body>
+    <script>
+      //asks the user for input----------  
+      var hours = Number(prompt(`Enter your bi-weekly hours: `));
+      var rate = Number(prompt(`Enter your hourly rate: $`));
+      var tax = 20;
+
+    //conversions----------
+      var gross = hours * rate;
+      var tax_amount = gross * (tax / 100);
+      var net = gross - tax_amount;
+
+      //function for displaying info in console---------
+      function payCalculations() {
+        console.log(`Gross Pay: $${gross.toFixed(2)}`);
+        console.log(`Uncle Sam's Share: $${tax_amount.toFixed(2)}`);
+        console.log(`Net Pay: $${net.toFixed(2)}`);
+      }
+
+      //calls function----------
+      payCalculations();
+
+      //alerts user of their pay
+      alert(
+        `Gross Pay: $${gross.toFixed(
+          2
+        )}\nUncle Sam's Share: $${tax_amount.toFixed(
+          2
+        )}\nNet Pay: $${net.toFixed(2)}`
+      );
+    </script>
+  </body>
+</html>
