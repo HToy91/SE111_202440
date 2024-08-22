@@ -17,7 +17,7 @@
       var rate = Number(prompt(`Enter your hourly rate: $`));
       var tax = 20;
 
-    //conversions----------
+      //conversions----------
       var gross = hours * rate;
       var tax_amount = gross * (tax / 100);
       var net = gross - tax_amount;
@@ -32,7 +32,7 @@
       //calls function----------
       payCalculations();
 
-      //alerts user of their pay
+      //alerts user of their pay---------
       alert(
         `Gross Pay: $${gross.toFixed(
           2
