@@ -41,6 +41,7 @@
 		//Store the elements (tags) in variables
 		var fName = document.querySelector(`#first`)
 		var lName = document.querySelector(`#last`)
+		var submit = document.querySelector(`#button`)
 		var output = document.querySelector(`#output`)
 
 
@@ -48,7 +49,7 @@
 		var people = []
 
 		//Make the button clickable. When clicked it calls the calcAndDisplay function.
-		document.querySelector(`#button`).addEventListener(`click`, calcAndDisplay)
+		submit.addEventListener(`click`, calcAndDisplay)
 		
 		/*-----------------------------------------------------
 		Will add objects into the people array. 
